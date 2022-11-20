@@ -1,7 +1,7 @@
 # Calculator on React
 
 Calculator App created with React.
-![Calc screenshot](https://imgur.com/1kaElq7)
+![Calc screenshot](https://i.imgur.com/1kaElq7.png)
 
 ## About
 This calculator app was created with React, and follows closely to a [tutorial guide](https://www.sitepoint.com/react-tutorial-build-calculator-app/), with the source code [provided here](https://github.com/madzadev/calculator). A few features were removed from the original tutorial, such as being able to invert values, and stylized to follow [this format](https://github.com/martysen/calculatorAppDemo)
