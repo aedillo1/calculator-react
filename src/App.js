@@ -31,7 +31,7 @@ const btnValues = [
 const App = () => {
   // Have to use state variables to grab certain values,
   // like the sign, the number, and the result of that number
-  // This is to make sure that this is all set to default values
+  // This here is to make sure that this is all set to default values
   let [calc, setCalc] = useState({
     sign: "",
     num: 0,
@@ -79,7 +79,8 @@ const App = () => {
     });
   };
 
-  // This 
+  // This function handles the sign operator, such as if the math
+  // has to add, subtract, etc.
   const signHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
@@ -102,6 +103,8 @@ const App = () => {
     });
   };
 
+  // This function handles the end result of the calculation.
+  // When any value is divided by 0, it returns "Infinity".
   const equalsHandler = () => {
     if (calc.sign && calc.num) {
       setCalc({
@@ -122,6 +125,7 @@ const App = () => {
     }
   };
 
+  // Returning the whole application as an HTML element
   return (
     <Wrapper>
       <Screen value={calc.num ? calc.num : calc.res} />
